@@ -1,10 +1,10 @@
-
+import Tictactoe from './tictactoe/Tictactoe';
 import './App.css';
 
-function App() {
+const App=()=> {
   return (
-    <div className="App">
-tictaktoe game
+    <div >
+<Tictactoe/>
     </div>
   );
 }
