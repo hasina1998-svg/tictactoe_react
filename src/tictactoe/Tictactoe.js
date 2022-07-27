@@ -25,6 +25,7 @@ const Tictactoe = () => {
  
   return (
     <div className="container">
+        {/* table contains start from here */}
       <table>
         Turn:{turn}
         <tbody>
