@@ -1,12 +1,12 @@
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(178, 167, 182);
+  background-color: rgb(13, 11, 14);
   width: 40%;
-  height: 600px;
+  height: 700px;
   box-shadow: 0 8px 6px -6px black;
-  
 }
 
 table td {
@@ -39,4 +39,30 @@ header{
 .table_heading{
   color: white;
   font-size: 2.9rem;
+  margin-bottom: 50px;
+}
+
+button{
+font-size: 1rem;
+cursor: pointer;
+outline: none;
+border: #2f3542;
+text-decoration: none;
+margin-top: 50px;
+color: #eb4d4d;
+}
+
+button.btn{
+font-weight: 600px;
+padding: 1rem 2rem;
+background: white;
+text-transform: uppercase;
+transition-property: all;
+transition-duration: 0.5s;
+transition-timing-function: cubic-bezier(0.65, 0.25, 0.25, 1.95);
+}
+
+button.btn:hover, button.btn:focus, button.btn:active{
+letter-spacing: 0.125rem;
+word-spacing: 0.2rem;
 }

@@ -48,6 +48,7 @@ const Tictactoe = () => {
               </tr>
             </tbody>
           </table>
+          <button className="btn">Restart</button>
         </div>
       </section>
     </>
