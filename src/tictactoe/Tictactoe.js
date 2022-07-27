@@ -1,3 +1,4 @@
+import { AlertDescription } from "@chakra-ui/react";
 import { useState } from "react";
 import "./tictactoe.css";
 
@@ -8,24 +9,27 @@ const Tictactoe = () => {
   const Cell = ({ num }) => {
     return <td onClick={() => handleClick(num)}>-</td>;
   };
-  const handleClick = () => {
+  const handleClick = (num) => {
+    if (cells[num] !== "") {
+      alert("already clicked");
+    }
     let squares = [...cells];
-   
+
     // alert('click');
     if (turn === "x") {
-      squares = "x";
+      squares[num] = "x";
       setTurn("0");
     } else {
-      squares = "o";
+      squares[num] = "o";
       setTurn("x");
     }
-    setCells(squares)
-    console.log(squares)
+    setCells(squares);
+    console.log(squares);
   };
- 
+
   return (
     <div className="container">
-        {/* table contains start from here */}
+      {/* table contains start from here */}
       <table>
         Turn:{turn}
         <tbody>
