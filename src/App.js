@@ -1,12 +1,12 @@
-import Tictactoe from './tictactoe/Tictactoe';
-import './App.css';
+import Tictactoe from "./tictactoe/Tictactoe";
+import "./App.css";
 
-const App=()=> {
+const App = () => {
   return (
-    <div >
-<Tictactoe/>
+    <div>
+      <Tictactoe />
     </div>
   );
-}
+};
 
 export default App;

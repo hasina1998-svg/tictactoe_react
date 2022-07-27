@@ -10,7 +10,7 @@ const Tictactoe = () => {
   };
   const handleClick = () => {
     let squares = [...cells];
-   
+
     // alert('click');
     if (turn === "x") {
       squares = "x";
@@ -19,33 +19,38 @@ const Tictactoe = () => {
       squares = "o";
       setTurn("x");
     }
-    setCells(squares)
-    console.log(squares)
+    setCells(squares);
+    console.log(squares);
   };
- 
+
   return (
-    <div className="container">
-      <table>
-        Turn:{turn}
-        <tbody>
-          <tr>
-            <Cell num={1} />
-            <Cell num={2} />
-            <Cell num={3} />
-          </tr>
-          <tr>
-            <Cell num={4} />
-            <Cell num={5} />
-            <Cell num={6} />
-          </tr>
-          <tr>
-            <Cell num={7} />
-            <Cell num={8} />
-            <Cell num={9} />
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <>
+      <header>Play tictactoe game</header>
+      <section>
+        <div className="container">
+          <table className="table_heading">
+            Turn:{turn}
+            <tbody>
+              <tr>
+                <Cell num={1} />
+                <Cell num={2} />
+                <Cell num={3} />
+              </tr>
+              <tr>
+                <Cell num={4} />
+                <Cell num={5} />
+                <Cell num={6} />
+              </tr>
+              <tr>
+                <Cell num={7} />
+                <Cell num={8} />
+                <Cell num={9} />
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </>
   );
 };
 
